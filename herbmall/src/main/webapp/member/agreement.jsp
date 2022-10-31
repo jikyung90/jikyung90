@@ -4,9 +4,9 @@
 <script type="text/javascript">
 	$(function(){
 		$('form[name=frmAgree]').submit(function(){
-			if($('#chkAgree').is(':checked')==false){		
+			if(!$('#chkAgree').is(':checked')){		
 				alert('약관에 동의하세요.');
-				$(this).focus();
+				$('#chkAgree').focus();
 				event.preventDefault();
 			}
 		});
